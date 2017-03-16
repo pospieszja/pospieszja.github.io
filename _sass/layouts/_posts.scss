@@ -13,6 +13,11 @@ article {
   a:hover {
     @extend %link-hover;
   }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .footnotes {
     font-size: 0.9em;
   }
