@@ -35,6 +35,6 @@ Utworzona formuła zwraca nowy zakres danych. Zaczyna się od komórki A1, będz
 
 Teraz możemy edytować wstawioną na początku tabelą przestawną i zmienić jest zakres wstawiając nazwę *RNG_FOR_PIVOT_TABLE*.
 
-![alt text](/img/pivot_tabel_dynamic_range.gif.gif "pivot tabel dynamic range")
+![alt text](/img/pivot_tabel_dynamic_range.gif "pivot tabel dynamic range")
 
 I tym oto sposobem możemy się cieszyć tabelą przestawną z dynamicznym zakresem danych. Wszelkie uwagi, pomysły mile widziane w komentarzach 🙂
