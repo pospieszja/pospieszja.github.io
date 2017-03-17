@@ -22,8 +22,8 @@ Bardzo często takie rozwiązanie jest wystarczające. Jednak jak to w życiu by
 ### Tabela przestawna z dynamicznym zakresem danych
 
 Rozwiązaniem jest użycie mechanizmu umożliwiającego nazywanie pojedynczych komórek, zakresów lub formuł. W tym konkretnym przypadku nazwiemy formułę. Będzie się ona składać z następujących funkcji:
-* [ILE.NIEPUSTYCH][1]
-* [PRZESUNIĘCIE][2]
+  * [ILE.NIEPUSTYCH][1]
+  * [PRZESUNIĘCIE][2]
 
 {% highlight bash %}
 =PRZESUNIĘCIE(Arkusz1!$A$1;0;0;ILE.NIEPUSTYCH(Arkusz1!$A:$A);3)
