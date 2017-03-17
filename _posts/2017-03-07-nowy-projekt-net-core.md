@@ -2,6 +2,7 @@
 layout: post
 title: Nowy projekt w .NET Core
 author: Jacek Pospieszyński
+date: '2017-03-07'
 categories: [DSP2017, DataBoard, .NETCore]
 ---
 
