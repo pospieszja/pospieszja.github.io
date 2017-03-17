@@ -4,6 +4,9 @@ title: Dynamiczny zakres danych w tabeli przestawnej
 author: Jacek Pospieszyński
 ---
 >A teraz coś z zupełnie innej beczki.
+
+![alt text](/img/monty-python.jpg) "monty python")
+
 W pracy spędzam wiele czasu wykorzystując **MS Excel**. Dla wielu osób tabele przestawne, wykresy i formuły w MS Excel to po prostu zwykłe mambo-dżambo. Chciałbym im wszystkim pomóc w korzystaniu z arkuszy kalkulacyjnych, a dla siebie pozostawić archiwum rozwiązanych problemów, i tym samym rozpoczynam serię wpisów o MS Excel (deal with it).
 
 ### Tabela przestawna ze stałym zakresem danych
@@ -30,6 +33,6 @@ Utworzona formuła zwraca nowy zakres danych. Zaczyna się od komórki A1, będz
 
 Teraz możemy edytować wstawioną na początku tabelą przestawną i zmienić jest zakres wstawiając nazwę *RNG_FOR_PIVOT_TABLE*.
 
-![alt text](/img/pivot_tabel_dynamic_range.gif.gif "pivot tabel dynamic range")
+![alt text](/img/pivot_tabel_dynamic_range.gif.gif) "pivot tabel dynamic range")
 
 I tym oto sposobem możemy się cieszyć tabelą przestawną z dynamicznym zakresem danych. Wszelkie uwagi, pomysły mile widziane w komentarzach 🙂
