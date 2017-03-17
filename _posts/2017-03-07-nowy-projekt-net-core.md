@@ -11,3 +11,9 @@ author: Jacek Pospieszyński
 Narzędzie .NET Core CLI umożliwia utworzenie projektu na podstawie kilku domyślnych szablonów.
 
 ![alt text](/img/dotnet-new.png "dotnet new")
+
+To co mnie najbardziej interesowało to część związana aplikacjami internetowymi. Na pierwszy rzut wybrałem szablon aplikacji MVC.
+
+{% highlight ruby %}
+dotnet new mvc
+{% endhighlight %}
