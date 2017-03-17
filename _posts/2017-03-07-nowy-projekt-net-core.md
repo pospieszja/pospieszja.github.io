@@ -2,7 +2,7 @@
 layout: post
 title: Nowy projekt w .NET Core
 author: Jacek Pospieszyński
-category: DSP2017
+categories: [DSP2017, DataBoard, .NETCore]
 ---
 
 .NET Core umożliwia uruchomienie tego samego kawałka kodu na wielu platformach (Windows, Linux, OS X). Pomyślałem zatem, że warto byłoby z tego skorzystać przy projekcie [DataBoard](https://github.com/pospieszja/DataBoard) i nabyć nowego doświadczenia przy pracy z Linuksem. Jako system operacyjny wybrałem [Elementary OS](https://elementary.io/), a jako edytor kodu [Visual Studio Code](https://code.visualstudio.com/). Visual Studio Code jest tylko edytorem tekstu, który oczywiście można wzbogacić wieloma [rozszerzeniami](https://marketplace.visualstudio.com/vscode) (pojawi się w przyszłości na ten temat oddzielny wpis), a nie zintegrowanym środowiskiem deweloperskim jak jego starszy brat Visual Studio, i tym samym nie umożliwia wygenerowania nowego projektu .NET Core (aplikacji konsolowej czy też webowej). A jak utworzyć nowy projekt .NET Core pod Linuksem dowiecie się dalej z tego wpisu.

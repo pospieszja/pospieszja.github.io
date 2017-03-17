@@ -2,7 +2,7 @@
 layout: post
 title: Dynamiczny zakres danych w tabeli przestawnej
 author: Jacek Pospieszyński
-category: DSP2017
+categories: [DSP2017, Excel]
 ---
 >A teraz coś z zupełnie innej beczki.
 
