@@ -5,7 +5,7 @@ author: Jacek Pospieszyński
 ---
 >A teraz coś z zupełnie innej beczki.
 
-![alt text](/img/monty-python.jpg) "monty python")
+![alt text](/img/monty-python.jpg "monty python")
 
 W pracy spędzam wiele czasu wykorzystując **MS Excel**. Dla wielu osób tabele przestawne, wykresy i formuły w MS Excel to po prostu zwykłe mambo-dżambo. Chciałbym im wszystkim pomóc w korzystaniu z arkuszy kalkulacyjnych, a dla siebie pozostawić archiwum rozwiązanych problemów, i tym samym rozpoczynam serię wpisów o MS Excel (deal with it).
 
