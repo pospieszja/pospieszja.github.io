@@ -14,6 +14,6 @@ Narzędzie .NET Core CLI umożliwia utworzenie projektu na podstawie kilku domy�
 
 To co mnie najbardziej interesowało to część związana aplikacjami internetowymi. Na pierwszy rzut wybrałem szablon aplikacji MVC.
 
-{% highlight ruby %}
+{% highlight bash %}
 dotnet new mvc
 {% endhighlight %}
