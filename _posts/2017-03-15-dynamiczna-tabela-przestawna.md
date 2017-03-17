@@ -22,8 +22,8 @@ Bardzo często takie rozwiązanie jest wystarczające. Jednak jak to w życiu by
 ### Tabela przestawna z dynamicznym zakresem danych
 
 Rozwiązaniem jest użycie mechanizmu umożliwiającego nazywanie pojedynczych komórek, zakresów lub formuł. W tym konkretnym przypadku nazwiemy formułę. Będzie się ona składać z następujących funkcji:
-* [ILE.NIEPUSTYCH](https://support.office.com/pl-pl/article/ILE-NIEPUSTYCH-funkcja-7dc98875-d5c1-46f1-9a82-53f3219e2509)
-* [PRZESUNIĘCIE](https://support.office.com/pl-pl/article/PRZESUNI%C4%98CIE-funkcja-c8de19ae-dd79-4b9b-a14e-b4d906d11b66)
+* [ILE.NIEPUSTYCH][1]
+* [PRZESUNIĘCIE][2]
 
 {% highlight bash %}
 =PRZESUNIĘCIE(Arkusz1!$A$1;0;0;ILE.NIEPUSTYCH(Arkusz1!$A:$A);3)
@@ -38,3 +38,6 @@ Teraz możemy edytować wstawioną na początku tabelą przestawną i zmienić j
 ![alt text](/img/pivot_tabel_dynamic_range.gif "pivot tabel dynamic range")
 
 I tym oto sposobem możemy się cieszyć tabelą przestawną z dynamicznym zakresem danych. Wszelkie uwagi, pomysły mile widziane w komentarzach 🙂
+
+[1]:https://support.office.com/pl-pl/article/ILE-NIEPUSTYCH-funkcja-7dc98875-d5c1-46f1-9a82-53f3219e2509
+[2]:https://support.office.com/pl-pl/article/PRZESUNI%C4%98CIE-funkcja-c8de19ae-dd79-4b9b-a14e-b4d906d11b66
