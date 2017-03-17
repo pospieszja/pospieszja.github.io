@@ -23,7 +23,7 @@ Rozwiązaniem jest użycie mechanizmu umożliwiającego nazywanie pojedynczych k
 * **[ILE.NIEPUSTYCH]**(https://support.office.com/pl-pl/article/ILE-NIEPUSTYCH-funkcja-7dc98875-d5c1-46f1-9a82-53f3219e2509)
 * **[PRZESUNIĘCIE]**(https://support.office.com/pl-pl/article/PRZESUNI%C4%98CIE-funkcja-c8de19ae-dd79-4b9b-a14e-b4d906d11b66)
 
-{% highlight %}
+{% highlight bash %}
 =PRZESUNIĘCIE(Arkusz1!$A$1;0;0;ILE.NIEPUSTYCH(Arkusz1!$A:$A);3)
 {% endhighlight %}
 
