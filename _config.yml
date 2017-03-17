@@ -2,6 +2,7 @@
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://pospieszja.github.io" # the base hostname & protocol for your site
 permalink: pretty
+excerpt_separator: "<!--more-->"
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
