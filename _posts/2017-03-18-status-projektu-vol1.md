@@ -15,7 +15,7 @@ Niestety prace nad projektem nie idą tak jakbym sobie tego życzył. Zamiast ko
 ### Moja własna architektura
 
 W katalogu głównym projektu utworzyłem folder *Models*. A w nim pojawiły się następujące klasy:
-* ***Database*** - klasa reprezentująca bazę danych, której zdrowie będzie badane przez aplikację
+* ***Database*** - klasa reprezentująca bazę danych, której "zdrowie" będzie badane przez aplikację
 
 {% highlight csharp %}
 public class Database
@@ -29,7 +29,7 @@ public class Database
 }
 {% endhighlight %}
 
-* ***Engine*** - klasa reprezentująca silnik bazy danych, myślę, że początkowej fazie projektu pozostanę tylko przy **MS SQL Server** (MVP przede wszystkim)
+* ***Engine*** - klasa reprezentująca silnik bazy danych, myślę, że w początkowej fazie projektu pozostanę tylko przy **MS SQL Server** (MVP przede wszystkim)
 
 {% highlight csharp %}
 public class Engine
@@ -85,8 +85,8 @@ public interface IUserRepository
 
 >Nie zaprezentowałem ciała klas "mockujących", żeby nie zakłócić czytelności. Implementują one interfejsy odpowiednio *IUserRepository* oraz *IMockRepository*.
 
-Po spędzeniu wielu godzin z "architekturą" niestety nie wymyśliłem nic ciekawszego. Myślę, że wraz z postępem w projekcie nadejdzie potrzeba refaktoryzacji. W założeniu aplikacja powinna zbierać historyczne dane o stanie bazy danych, ale w tym momencie funkcjonalność ta nie znajduje się w obrębie MVP ;-)
+Po spędzeniu wielu godzin z "architekturą" niestety nie wymyśliłem nic ciekawszego. Myślę, że wraz z postępem w projekcie nadejdzie potrzeba refaktoryzacji.
 
-Jeżeli macie pomysły na poprawę powyższego stanu rzeczy czekam na komentarze :)
+W założeniu aplikacja powinna dodatkowo zbierać historyczne dane o stanie bazy danych, ale w tym momencie funkcjonalność ta nie znajduje się w obrębie MVP ;-)
 
-
+Jeżeli macie pomysły na poprawę powyższego stanu rzeczy czekam na komentarze :-)
