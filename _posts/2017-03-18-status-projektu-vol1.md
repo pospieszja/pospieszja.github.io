@@ -8,6 +8,8 @@ categories: [DSP2017, DataBoard, .NETCore]
 
 Niestety prace nad projektem nie idą tak jakbym sobie tego życzył. Zamiast kodować, spędziłem bardzo, bardzoo, bardzooo dużo czasu czytając znalezione w Internecie blogi i artykuły związane z wzorcami projektowymi i architektonicznymi. Tu coś o podejściu DDD, gdzie indziej o architekturze warstwowej, a jeszcze gdzieś dalej o wzorcu repozytorium. Ze względu na brak doświadczenia komercyjnego w mojej głowie powstał niemały mętlik, który nie przyczynił sie do postępu prac. Z związku z tym status projektu będzie krótki.
 
+![alt text](https://media.giphy.com/media/KI9oNS4JBemyI/giphy.gif "mind blown")
+
 <!--more-->
 
 ### Moja własna architektura
