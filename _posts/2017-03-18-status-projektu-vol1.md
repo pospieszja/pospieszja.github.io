@@ -6,14 +6,14 @@ date: '2017-03-18'
 categories: [DSP2017, DataBoard, .NETCore]
 ---
 
-Niestety prace nad projektem nie idą tak jakbym sobie tego życzył. Zamiast kodować, bardzo, bardzoo, bardzooo dużo czasu spędziłem czytając różne blogi i artykuły związane z wzorcami projektowymi i architektonicznymi. Tu coś o podejściu DDD, gdzie indziej o architekturze warstwowej, a jeszcze gdzieś dalej o wzorcu repozytorium. Ze względu na brak doświadczenia komercyjnego w mojej głowie powstał niemały mętlik. Z związku z tym status projektu będzie krótki.
+Niestety prace nad projektem nie idą tak jakbym sobie tego życzył. Zamiast kodować, spędziłem bardzo, bardzoo, bardzooo dużo czasu czytając znalezione w Internecie blogi i artykuły związane z wzorcami projektowymi i architektonicznymi. Tu coś o podejściu DDD, gdzie indziej o architekturze warstwowej, a jeszcze gdzieś dalej o wzorcu repozytorium. Ze względu na brak doświadczenia komercyjnego w mojej głowie powstał niemały mętlik, który nie przyczynił sie do postępu prac. Z związku z tym status projektu będzie krótki.
 
 <!--more-->
 
 ### Moja własna architektura
 
 W katalogu głównym projektu utworzyłem folder *Models*. A w nim pojawiły się następujące klasy:
-* *Database*
+* ***Database*** - klasa reprezentująca bazę danych, której zdrowie będzie badane przez aplikację
 
 {% highlight csharp %}
 public class Database
@@ -27,7 +27,8 @@ public class Database
 }
 {% endhighlight %}
 
-* *Engine*
+* ***Engine*** - klasa reprezentująca silnik bazy danych, myślę, że początkowej fazie projektu pozostanę tylko przy **MS SQL Server** (MVP przede wszystkim)
+
 {% highlight csharp %}
 public class Engine
 {
@@ -36,7 +37,8 @@ public class Engine
 }
 {% endhighlight %}
 
-* *User*
+* ***User*** - klasa reprezentująca użytkownika, muszę coś wymyślić w kwestii przechowywania hasła, bo *string* nie jest dobrym pomysłem ;-)
+
 {% highlight csharp %}
 public class User
 {
@@ -46,7 +48,9 @@ public class User
     public List<Database> Databases { get; set; }
 }
 {% endhighlight %}
-* *IDatabaseRepository*
+
+* ***IDatabaseRepository*** - klasa reprezentująca operację CRUD na obiekcie *Database*
+
 {% highlight csharp %}
 public interface IDatabaseRepository
 {
@@ -56,9 +60,11 @@ public interface IDatabaseRepository
     void AddDatabase(User database);
     void EditDatabase(User database);
     void DeleteDatabase(int databaseId);
-    }
+}
 {% endhighlight %}
-* *IUserRepository*
+
+* ***IUserRepository*** - klasa reprezentująca operację CRUD na obiekcie *User*
+
 {% highlight csharp %}
 public interface IUserRepository
 {
@@ -71,59 +77,14 @@ public interface IUserRepository
     void DeleteUser(int userId);
 }
 {% endhighlight %}
-* *MockUserRepository*
-{% highlight csharp %}
-public class MockUserRepository : IUserRepository
-{
-    public IEnumerable<User> Users => throw new NotImplementedException();
 
-    public void AddUser(User user)
-    {
-        throw new NotImplementedException();
-    }
+* ***MockUserRepository***
+* ***MockDatabaseRepository***
 
-    public void DeleteUser(int userId)
-    {
-        throw new NotImplementedException();
-    }
+>Nie zaprezentowałem ciała klas "mockujących", żeby nie zakłócić czytelności. Implementują one interfejsy odpowiednio *IUserRepository* oraz *IMockRepository*.
 
-    public void EditUser(User user)
-    {
-        throw new NotImplementedException();
-    }
+Po spędzeniu wielu godzin z "architekturą" niestety nie wymyśliłem nic ciekawszego. Myślę, że wraz z postępem w projekcie nadejdzie potrzeba refaktoryzacji. W założeniu aplikacja powinna zbierać historyczne dane o stanie bazy danych, ale w tym momencie funkcjonalność ta nie znajduje się w obrębie MVP ;-)
 
-    public User GetUserById(int userId)
-    {
-        throw new NotImplementedException();
-    }
-}
-{% endhighlight %}
-* *MockDatabaseRepository*
-{% highlight csharp %}
-public class MockDatabaseRepository : IDatabaseRepository
-{
-    public IEnumerable<Database> Databases => throw new NotImplementedException();
-
-    public void AddDatabase(User database)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void DeleteDatabase(int databaseId)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void EditDatabase(User database)
-    {
-        throw new NotImplementedException();
-    }
-
-    public User GetDatabaseById(int databaseId)
-    {
-        throw new NotImplementedException();
-    }
-}
-{% endhighlight %}
+Jeżeli macie pomysły na poprawę powyższego stanu rzeczy czekam na komentarze :)
 
 
