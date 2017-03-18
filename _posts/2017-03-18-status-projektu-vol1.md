@@ -85,8 +85,7 @@ public interface IUserRepository
 
 >Nie zaprezentowałem ciała klas "mockujących", żeby nie zakłócić czytelności. Implementują one interfejsy odpowiednio *IUserRepository* oraz *IMockRepository*.
 
-Po spędzeniu wielu godzin z "architekturą" niestety nie wymyśliłem nic ciekawszego. Myślę, że wraz z postępem w projekcie nadejdzie potrzeba refaktoryzacji.
-
 W założeniu aplikacja powinna dodatkowo zbierać historyczne dane o stanie bazy danych, ale w tym momencie funkcjonalność ta nie znajduje się w obrębie MVP ;-)
 
+Po spędzeniu wielu godzin z "architekturą" niestety nie wymyśliłem nic ciekawszego. Myślę, że wraz z postępem w projekcie nadejdzie potrzeba refaktoryzacji.
 Jeżeli macie pomysły na poprawę powyższego stanu rzeczy czekam na komentarze :-)
