@@ -42,7 +42,7 @@ theme_settings:
 
   # Scripts
   google_analytics: UA-93951291-1
-  disqus_shortname: pospieszynski-net
+  disqus_shortname: blog-pospieszynski-net
   muut_community_name: # From muut.com settings, e.g. "muttcommunityname"
   katex: # Enable if using math markup
 
