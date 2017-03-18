@@ -41,7 +41,7 @@ theme_settings:
   youtube:
 
   # Scripts
-  google_analytics: UA-91548956-1
+  google_analytics: UA-91548956-2
   disqus_shortname: pospieszynski-net
   muut_community_name: # From muut.com settings, e.g. "muttcommunityname"
   katex: # Enable if using math markup
