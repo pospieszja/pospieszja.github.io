@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://pospieszja.github.io" # the base hostname & protocol for your site
+url: "https://blog.pospieszynski.net" # the base hostname & protocol for your site
 permalink: /:year/:month/:day/:title
 excerpt_separator: "<!--more-->"
 
@@ -10,7 +10,7 @@ theme_settings:
   title: HomePage | Jacek Pospieszyński
   avatar: avatar.png
   gravatar: # Email MD5 hash
-  description: "Mój osobisty blog" # used by search engines
+  description: "Mój osobisty blog o starciach z programowaniem i nie tylko - Jacek Pospieszyński " # used by search engines
 
   # Header and footer text
   header_text: 
