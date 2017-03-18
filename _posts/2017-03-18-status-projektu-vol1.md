@@ -37,6 +37,7 @@ public class Engine
 {% endhighlight %}
 
 * *User*
+{% highlight csharp %}
 public class User
 {
     public int UserID { get; set; }
@@ -46,6 +47,7 @@ public class User
 }
 {% endhighlight %}
 * *IDatabaseRepository*
+{% highlight csharp %}
 public interface IDatabaseRepository
 {
     IEnumerable<Database> Databases { get; }
@@ -57,18 +59,20 @@ public interface IDatabaseRepository
     }
 {% endhighlight %}
 * *IUserRepository*
-    public interface IUserRepository
-    {
-        IEnumerable<User> Users { get; }
+{% highlight csharp %}
+public interface IUserRepository
+{
+    IEnumerable<User> Users { get; }
 
-        User GetUserById(int userId);
+    User GetUserById(int userId);
 
-        void AddUser(User user);
-        void EditUser(User user);
-        void DeleteUser(int userId);
-    }
+    void AddUser(User user);
+    void EditUser(User user);
+    void DeleteUser(int userId);
+}
 {% endhighlight %}
 * *MockUserRepository*
+{% highlight csharp %}
 public class MockUserRepository : IUserRepository
 {
     public IEnumerable<User> Users => throw new NotImplementedException();
@@ -95,6 +99,7 @@ public class MockUserRepository : IUserRepository
 }
 {% endhighlight %}
 * *MockDatabaseRepository*
+{% highlight csharp %}
 public class MockDatabaseRepository : IDatabaseRepository
 {
     public IEnumerable<Database> Databases => throw new NotImplementedException();
