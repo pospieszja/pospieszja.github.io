@@ -7,7 +7,7 @@ categories: [DSP2017, DataBoard, .NETCore]
 ---
 Visual Studio 2015 przyzwyczaił mnie do prostego przeglądania, wyszukiwania i instalacji pakietów Nuget. Wbudowany menadżer pakietów był dla mnie wystarczający i nie potrzebowałem żadnych alternatyw. Pracując przy projekcie DataBoard na **ElementaryOS** i z **Visual Studio Code** musiałem znaleźć rozwiązanie, które zastąpi mi ręczną edycję pliku `*.csproj`.
 
-![alt text](/assets/2017-03-21-zarzadzanie-pakietami-nuget/nuget-logo.gif "nuget.org")
+![alt text](/assets/2017-03-21-zarzadzanie-pakietami-nuget/nuget-logo.png "nuget.org")
 
 <!--more-->
 
