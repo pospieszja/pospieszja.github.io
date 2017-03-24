@@ -7,14 +7,14 @@ categories: [DSP2017, Excel]
 ---
 Kontynuuje serię z poradnikami dla MS Excel. Ostatnio było o dynamicznych zakresach dla tabel przestawnych, a dziś opiszę w jaki sposób utworzyć wykres, którego seria danych będzie się zmieniać dynamicznie, bez ręcznej edycji.
 
-![logo ms excel](/assets/2017-03-24-dynamiczny_wykres/excel-logo.png "MS Excel")
+![logo ms excel](/assets/2017-03-24-dynamiczny-wykres/excel-logo.png "MS Excel")
 
 <!--more-->
 
 ### Statyczny wykres
 Chcemy zestawić na wykresie kolumny 'Wykonanie' oraz 'Wysyłka' za marzec 2017. Nie ma żadnego problemu. Zaznaczymy nagłówki wraz z danymi, a następnie ze wstążki *Wstawianie* wybieramy wykres typu kolumnowego. W wyniku otrzymujemy wykres jak poniżej.
 
-![statyczny wykres](/assets/2017-03-24-dynamiczny_wykres/fixed-chart.png "statyczny wykres")
+![statyczny wykres](/assets/2017-03-24-dynamiczny-wykres/fixed-chart.png "statyczny wykres")
 
 Czasami zachodzi potrzeba wyświetlenia na wykresie tylko fragmentu danych. Jeżeli wykres składa się tylko z kilku serii danych, nie jest to problem, można ręcznie wyedytować każdą serię i zmienić jej zakresy (należy również pamiętać o zmianie zakresu danych dla etykiet osi). Jednak gdy wykres składa się z wielu serii danych staje się to już kłopotliwe, szczególnie jeżeli takich zmian dokonujemy często.
 
@@ -31,12 +31,12 @@ Co się dzieje powyżej? Otóż dla każdej z formuł zwracany jest nowy zakres 
 
 Zawartość **Menedżera nazw** powinna wyglądać tak jak poniżej.
 
-![menadżer nazw](/assets/2017-03-24-dynamiczny_wykres/name-manager.png "menadżer nazw")
+![menadżer nazw](/assets/2017-03-24-dynamiczny-wykres/name-manager.png "menadżer nazw")
 
 Następnie po dodaniu nazwanych formuł pora na edycję wykresu.
 
-![edycja wykresu](/assets/2017-03-24-dynamiczny_wykres/chart-edit-data-series.gif "edycja wykresu")
+![edycja wykresu](/assets/2017-03-24-dynamiczny-wykres/chart-edit-data-series.gif "edycja wykresu")
 
 A tak prezentuje się nasz końcowy efekt pracy, czyli piękny, dynamiczny wykres ;-)
 
-![dynamiczny wykres](/assets/2017-03-24-dynamiczny_wykres/dynamic-chart.gif "dynamiczny wykres")
+![dynamiczny wykres](/assets/2017-03-24-dynamiczny-wykres/dynamic-chart.gif "dynamiczny wykres")
