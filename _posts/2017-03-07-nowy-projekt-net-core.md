@@ -14,7 +14,7 @@ categories: [DSP2017, DataBoard, .NETCore]
 
 Narzędzie .NET Core CLI umożliwia utworzenie projektu na podstawie kilku domyślnych szablonów.
 
-![alt text](/assets/2017-03-07-nowy-projekt-net-core/dotnet-new.png "dotnet new")
+![dotnet new](/assets/2017-03-07-nowy-projekt-net-core/dotnet-new.png "dotnet new")
 
 To co mnie najbardziej interesowało to część związana aplikacjami internetowymi. Na pierwszy rzut wybrałem szablon aplikacji MVC.
 
@@ -24,7 +24,7 @@ $ dotnet new mvc
 
 Generowanie projektu trwało 409 ms,  a w Visual Studio Code moim oczom ukazała się lista plików.
 
-![alt text](/assets/2017-03-07-nowy-projekt-net-core/vscode-dotnet-new-mvc.png "vscode dotnet new mvc")
+![vscode dotnet new mvc](/assets/2017-03-07-nowy-projekt-net-core/vscode-dotnet-new-mvc.png "vscode dotnet new mvc")
 
 Jak widać powyżej, powstał szkielet pełnego projektu MVC. Niestety nie wiedziałem dokładnie co, jak i dlaczego zostało wygenerowane, nie wspominając o zawartości plików klas i zależności. Wobec tego wybrałem drugą opcję i utworzyłem pusty projekt aplikacji internetowej.
 
@@ -34,7 +34,7 @@ $ dotnet new web
 
 Tym razem już po 86 ms został wygenerowany, najprostszy z możliwych, startowy projekt aplikacji internetowej.
 
-![alt text](/assets/2017-03-07-nowy-projekt-net-core/vscode-dotnet-new-web.png "vscode dotnet new web")
+![vscode dotnet new web](/assets/2017-03-07-nowy-projekt-net-core/vscode-dotnet-new-web.png "vscode dotnet new web")
 
 Dalej wywołałem:
 
@@ -45,11 +45,11 @@ $ dotnet run
 
 Pierwsze polecenie pobiera zależności (zapisane w pliku *DataBoard.csproj*), za pomocą menadżera pakietów [Nuget](https://www.nuget.org/), wymagane do uruchomienia aplikacji. Drugie uruchamia aplikację, a w tym konkretnym przypadku również lokalny serwer (*Kestrel*).
 
-![alt text](/assets/2017-03-07-nowy-projekt-net-core/dotnet-run.png "dotnet run")
+![dotnet run](/assets/2017-03-07-nowy-projekt-net-core/dotnet-run.png "dotnet run")
 
 Jeżeli wszystko przebiegło pomyślnie po wpisaniu w przeglądarce adresu *http://localhost:5000* powinna się ukazać poniższa strona.
 
-![alt text](/assets/2017-03-07-nowy-projekt-net-core/hello-world.png "hello world")
+![hello world screenshot](/assets/2017-03-07-nowy-projekt-net-core/hello-world.png "hello world")
 
 Kolekcje domyślnych szablonów można już teraz zwiększyć o szablony SinglePageApplication, zostało to opisane na blogu [.NET WebDev](https://blogs.msdn.microsoft.com/webdev/2017/02/14/building-single-page-applications-on-asp-net-core-with-javascriptservices/). Co więcej każdy może utworzyć swój własny szablon korzystając z [tego](https://github.com/dotnet/templating/wiki/%22Runnable-Project%22-Templates) opisu.
 
