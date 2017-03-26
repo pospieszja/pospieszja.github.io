@@ -7,7 +7,7 @@ categories: [DSP2017, Jekyll]
 ---
 Na [slacku](http://devspl.slack.com) dość często przewijał się temat **[Jekylla](https://jekyllrb.com/)**. Wiele osób wybrało go na starcie jako silnik swojego bloga, a inne porzuciły **[Wordpress](https://wordpress.org/)** na jego rzecz. Jako, że z konkursowym projektem jestem do tyłu nie pozostało mi nic innego jak... poświęcić parę dni i samemu przekonać się czy warto.
 
-![logo jekyll](/assets/2017-03-26-dr-jekyll-and-dr-wordpress/jekyll-logo.png "Jekyll")
+![logo jekyll](/assets/2017-03-26-dr-jekyll-and-mr-wordpress/jekyll-logo.png "Jekyll")
 
 <!--more-->
 
@@ -15,11 +15,13 @@ Na [slacku](http://devspl.slack.com) dość często przewijał się temat **[Jek
 **Jekyll** to prosty generator statycznych stron HTML. Zatem nie potrzeba żadnego PHP ani żadnej bazy danych, co mocno upraszcza sprawę hostingu. Został napisany w **Ruby** przez [Toma Prestona-Wernera](https://en.wikipedia.org/wiki/Tom_Preston-Werner), współzałożyciela [GitHub](https://github.com/), co jest istotne ponieważ dzięki temu można za darmo hostować Jekylla na [GitHub Pages](https://pages.github.com/). Wystarczy utworzyć konto i repozytorium na GitHub, a potem "pushować" swoje blogaski.
 
 ### Jak zacząć?
-Można zacząć na dwa sposoby. Jeżeli chcemy zacząć od samych podstaw to rozpoczynamy od zabawy z **Ruby**, potem instalacja odpowiednich gemów i utworzenie domyślnej struktury projektu. Ponieważ nie mam zainstalowanego Ruby i w najbliższym czasie nie przewiduje takiej potrzeby, to od razu przeszedłem do drugiego sposobu. Gdyby ktoś był zainteresowany szerzej sposobem numer jeden, zapraszam [tutaj](https://jekyllrb.com/docs/quickstart/).
+Można zacząć na dwa sposoby. Jeżeli chcemy zacząć od samych podstaw to rozpoczynamy od zabawy z **Ruby**, potem instalacja odpowiednich gemów i utworzenie domyślnej struktury projektu. Ponieważ nie mam zainstalowanego Ruby i w najbliższym czasie nie przewiduje takiej potrzeby, to od razu przeszedłem do drugiego sposobu. Gdyby ktoś był zainteresowany szerzej sposobem numer jeden zapraszam [tutaj](https://jekyllrb.com/docs/quickstart/).
 
 Drugi sposób to wykorzystanie [GitHub Pages](https://pages.github.com/). Wpisujemy w google frazę "jekyll themes" i znajdujemy szablon, który spełnia nasze wymagania. Ja do tego wykorzystałem [JekyllThemes](https://jekyllthemes.io/). W większości przypadków szablon można pobrać lub "sforkować" (jakiego polskiego słowna można tu użyć??) go do swojego repozytorium.
 
 Aby móc skorzystać z magii **GitHub Pages** nazwę repozytorium Jekylla trzeba przemianować na `username.github.io`, następnie w ustawieniach GitHub Pages wskazać z której gałęzi ma korzystać. I teraz najfajniejsza sprawa. Cała magia wykonuje się w tle, czyli statyczna strona na podstawie szablonu generuje się samoczynnie po stronie GitHub Pages bez naszej ingerencji. Każdy "commit" wywołuje uruchomienie generatora stron statycznych.
+
+![github pages source](/assets/2017-03-26-dr-jekyll-and-mr-wordpress/github-pages-source.png "github pages source")
 
 "Jądrem", że tak się wyrażę, Jekylla jest plik `_config.yml`, w którym konfiguruje się najważniejsze parametry strony: adres, nazwa, opis, sposób tworzenia linków itp.
 Również można tam dodwać rozszerzenia Jekylla, najważniejsze to:
