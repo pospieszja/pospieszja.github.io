@@ -21,7 +21,7 @@ Po pierwsze utworzyłem nowego brancha o jakże wiele mówiącej nazwie ``develo
 * DataBoard.Web
 * DataBoard.Tests
 
->Od razu, na wstępie, napiszę w jaki sposób można dodać referencję do własnych projektów bez udziału Visual Studio. Sam spędziłem wiele czasu na znalezieniu tej informacji, być może tworzyłem błędne frazy zapytań w Google. Należy otworzyć plik *.csproj a w nim dodać (tak to wyglądało w moim przypadku) następująca linię: ``<Import Project="..\DataBoard.Core\DataBoard.Core.csproj"/>``. Po zapisaniu pliku można wywołać polecenie ``dotnet restore`` i sprawdzić tym samym poprawność wprowadzonej zmiany.
+>Od razu, na wstępie, napiszę w jaki sposób można dodać referencję do własnych projektów bez udziału Visual Studio. Sam spędziłem wiele czasu na znalezieniu tej informacji, być może tworzyłem błędne frazy zapytań w Google. Należy otworzyć plik ``*.csproj`` a w nim dodać (tak to wyglądało w moim przypadku) następującą linię: ``<Import Project="..\DataBoard.Core\DataBoard.Core.csproj"/>``. Po zapisaniu pliku można wywołać polecenie ``dotnet restore`` i sprawdzić tym samym poprawność wprowadzonej zmiany.
 
 ``DataBoard.Core`` niezależny projekt, który jest nieświadomy istnienia pozostałych. Będą się w nim znajdowały klasy domenowe wraz z repozytoriami, które będą wstrzykiwane do pozostałych projektów.
 
@@ -29,7 +29,7 @@ Po pierwsze utworzyłem nowego brancha o jakże wiele mówiącej nazwie ``develo
 
 ``DataBoard.Web`` gwóźdź programu powiązany tylko z ``DataBoard.Infrastructure``, nieświadomy gdzie i w jaki sposób przechowywane są dane. Na ten moment jest to projekt ASP.NET Core MVC, ale myślę, co by nie przekształcić go na API. Wówczas chciałbym w kontrolerze zwracać prostego JSONa, który byłby spożywany przez zdobywającą co raz większą popularność [Vue.js](https://vuejs.org/). Dlaczego Vue.js, a nie jak na początku zakładałem [React](https://facebook.github.io/react/)? A no dlatego, że ponoć entry level jest dużo niższy dla osób nieznających JavaScript. Zatem coś dla mnie ;-)
 
-``Databoard.Tests`` na ten moment projekt jest zupełnie pusty, ale mam nadzieję, że pusty nie pozostanie, bo mam nadzieję napisać w końcu pierwszy test :D
+``Databoard.Tests`` na ten moment projekt jest zupełnie pusty, ale mam nadzieję, że taki nie pozostanie. Już nie długo postaram się o pierwszy test... ale to plany, jak to wyjdzie w konfrontacji z reczywistością tego nie wiedzą nawet najstarsi mnichowie :D
 
 ### Tylko tyle
 Niestety przez jakieś dwa tygodnie udało mi się tylko tyle zrealizować. To nie jest tak, że mało robię, nie, nie ! :) Po prostu wiele czas poświęcam na czytanie i oglądanie materiałów na YT związanych z projektem. Mam nadzieję, że kolejny wpis o projekcie będzie bogatszy w "mięso". A teraz w ramach relaksu czas na finałowy odcinek sezonu **The Walking Dead** :D
