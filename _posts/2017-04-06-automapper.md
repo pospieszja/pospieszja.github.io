@@ -6,7 +6,7 @@ date: '2017-04-06'
 categories: [DSP2017, DataBoard, .NETCore]
 ---
 
-Wraz z nowym podejściem architektonicznym zaszła potrzeba wykorzystania w projekcie przepisywania obiektów klas domenowych na obiekty typu [DTO](https://en.wikipedia.org/wiki/Data_transfer_object). W celu uproszenia sobie sprawy zastosowałem bilbiotekę [AutoMapper](http://automapper.org/), która będzie głównym gościem tego posta.
+Wraz z nowym podejściem architektonicznym zaszła przepisywania obiektów klas domenowych na obiekty typu [DTO](https://en.wikipedia.org/wiki/Data_transfer_object). W celu uproszenia sobie sprawy zastosowałem bilbiotekę [AutoMapper](http://automapper.org/), która będzie głównym gościem tego posta.
 
 ![AutoMapper](/assets/2017-04-06-automapper/automapper_logo.png "automapper")
 
@@ -80,9 +80,9 @@ public static class AutoMapperConfig
 }
 {% endhighlight %}
 
-W ``Databoard.Web`` muszę w konfiguracji dodać ``services.AddSingleton(AutoMapperConfig.Initialize());`` ponieważ konfiguracja jest jedna i będzie niezmieniona przez cały cykl trwania uruchomionej aplikacji.
+W ``Databoard.Web`` muszę w konfiguracji dodać ``services.AddSingleton(AutoMapperConfig.Initialize());`` ponieważ konfiguracja jest jedna i będzie niezmieniona przez cały cykl życia aplikacji jako procesu.
 
-Teraz można użyć biblioteki zamiast ręcznego przepisywania właściwości. Należy pamiętać o wstrzyknięciu zależności ``IMapper`` w konstruktorze klasy, w które zdefiniowana jest metoda, w moim przypadku w klasie ``UserService``.
+Teraz można użyć biblioteki zamiast ręcznego przepisywania właściwości. Należy pamiętać o wstrzyknięciu zależności ``IMapper`` w konstruktorze klasy, w której zdefiniowana jest metoda, w moim przypadku w klasie ``UserService``.
 
 {% highlight csharp %}
 public UserDto GetUser(Guid id)
@@ -92,4 +92,4 @@ public UserDto GetUser(Guid id)
 }
 {% endhighlight %}
 
-Powyżej przedstawiam najprostsze użycie **AutoMappera**. Pozwala on na dużo więcej jak chociażby na mapowanie kolekcji, przypisywanie wartości domyślnych, czy też omijanie właściwości przy mapowaniu, po więcej odsyłam do [wiki](https://github.com/AutoMapper/AutoMapper/wiki).
+Powyżej przedstawiam najprostsze użycie **AutoMappera**. Pozwala ona na dużo więcej jak chociażby na mapowanie kolekcji, przypisywanie wartości domyślnych, czy też omijanie właściwości przy mapowaniu, po więcej odsyłam do [wiki](https://github.com/AutoMapper/AutoMapper/wiki).
