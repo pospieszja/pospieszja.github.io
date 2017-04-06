@@ -6,7 +6,7 @@ date: '2017-04-06'
 categories: [DSP2017, DataBoard, .NETCore]
 ---
 
-Wraz z nowym podejściem architektonicznym zaszła przepisywania obiektów klas domenowych na obiekty typu [DTO](https://en.wikipedia.org/wiki/Data_transfer_object). W celu uproszenia sobie sprawy zastosowałem bilbiotekę [AutoMapper](http://automapper.org/), która będzie głównym gościem tego posta.
+Wraz z nowym podejściem architektonicznym zaszła potrzba przepisywania obiektów klas domenowych na obiekty typu [DTO](https://en.wikipedia.org/wiki/Data_transfer_object). W celu uproszczenia sobie sprawy zastosowałem bilbiotekę [AutoMapper](http://automapper.org/), która będzie głównym gościem tego posta.
 
 ![AutoMapper](/assets/2017-04-06-automapper/automapper_logo.png "automapper")
 
@@ -38,7 +38,7 @@ public class UserDto
 }
 {% endhighlight %}
 
-Ja w swojej aplikacji chcę zwracać w swojej metodzie ``GetUser`` obiekt typu ``UserDto`` i aby to zrobić muszę recznie dokonać przepisywania właściwości.
+W swojej aplikacji użyłem metody ``GetUser``, która zwraca obiekt typu ``UserDto`` i aby to zrobić muszę recznie dokonać przepisywania właściwości.
 Obiekt typu ``User`` pobierany jest z repozytorium projektu ``Databoard.Core``.
 
 {% highlight csharp %}
@@ -53,7 +53,7 @@ public UserDto GetUser(Guid id)
 }
 {% endhighlight %}
 
-Przy każdej zmianie klasy typu DTO będą musiał dokonywać zmiany w przypisywaniu wartości - co jest czasochłonne i może prowadzić do generowania błędów.
+Przy każdej zmianie klasy typu DTO będę musiał dokonywać zmiany w przypisywaniu wartości - co jest czasochłonne i może prowadzić do generowania błędów.
 Cały proces można zautomatyzować przy użyciu biblioteki **AutoMapper**.
 
 Prawdopodobnie powyższy kod można byłoby mapować korzystając z mechanizmu refleksji, jednak nie jest to łatwe i nie ma sensu wyważać otwartych drzwi.
