@@ -6,7 +6,7 @@ date: '2017-04-10'
 categories: [DSP2017, MSSQLServer, .NETCore]
 ---
 
-W marcu 2016 roku Microsoft [ogłosił](https://blogs.microsoft.com/blog/2016/03/07/announcing-sql-server-on-linux/), że wyda SQL Server 2016 również na Linuxa i zakończy się tym samym hegemonia [Oracle](https://www.oracle.com/). Cały świat .NET stanął na równe nogi, nikt się tego nie spodziewał, a na pewno ja :) Minął rok od tego wydarzenia, a ja nie miałem okazji samodzielnie spradzić jak wygląda w praktyce SQL Sever na Linuksie. Dziś krotki wpis o tym jak zainstalować bazę danych oraz jak wywołać pierwsze polecenia.
+W marcu 2016 roku Microsoft [ogłosił](https://blogs.microsoft.com/blog/2016/03/07/announcing-sql-server-on-linux/), że wyda [SQL Server 2016](https://www.microsoft.com/en-us/sql-server/sql-server-2016) również na Linuxa i zakończy się tym samym hegemonia [Oracle](https://www.oracle.com/). Cały świat .NET stanął na równe nogi, nikt się tego nie spodziewał, a na pewno nie ja :) Minął rok od tego wydarzenia, a dotychczas nie miałem okazji samodzielnie sprawdzić jak wygląda w praktyce SQL Server na Linuksie. Dziś krotki wpis o tym jak zainstalować bazę danych oraz jak wywołać pierwsze polecenia.
 
 ![SQL Server on Linux](/assets/2017-04-13-sql-server-on-linux/sql-linux.png "sql server on linux")
 
@@ -33,6 +33,10 @@ $ /opt/mssql/bin/mssql-conf setup
 {% endhighlight %}
 
 ![SQL Server configuration](/assets/2017-04-13-sql-server-on-linux/sql-server-conf.png "sql server configuration")
+
+Poleceniem `systemctl status mssql-server` możemy sprawdzić status usługi.
+
+![SQL Server service status](/assets/2017-04-13-sql-server-on-linux/systemctl.png "sql server service status")
 
 Warto również zainstalować narzędzia MS SQL Server, które pozwolą na wywoływanie poleceń SQL z linii komend.
 Klucz już dodaliśmy, wystarczy dodać nowe repozytorium, zaktualizować je, a następnie zainstalować toolsy.
