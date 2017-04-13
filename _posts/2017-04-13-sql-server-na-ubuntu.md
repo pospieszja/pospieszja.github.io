@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MS SQL Server na Linuxie
+title: MS SQL Server na Ubuntu
 author: Jacek Pospieszyński
 date: '2017-04-10'
 categories: [DSP2017, MSSQLServer, .NETCore]
@@ -13,7 +13,7 @@ W marcu 2016 roku Microsoft [ogłosił](https://blogs.microsoft.com/blog/2016/03
 <!--more-->
 
 ### Instalacja
->Opiszę instalację na Ubuntu 16.04, dlatego, że ElementaryOS z którego korzystam wykorzstuje właśnie tą wersję Ubuntu jako podstawę.
+>Opiszę instalację na **Ubuntu 16.04**, dlatego, że **ElementaryOS** z którego korzystam wykorzstuje właśnie tą wersję Ubuntu jako podstawę.
 
 W pierwszej kolejności należy dodać klucz GPG oraz nowe źródło z repozytorium do MS SQL Server.
 {% highlight bash %}
