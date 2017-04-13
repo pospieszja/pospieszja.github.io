@@ -2,7 +2,7 @@
 layout: post
 title: MS SQL Server na Ubuntu
 author: Jacek Pospieszyński
-date: '2017-04-10'
+date: '2017-04-13'
 categories: [DSP2017, MSSQLServer, .NETCore]
 ---
 
