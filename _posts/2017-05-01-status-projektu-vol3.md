@@ -2,7 +2,7 @@
 layout: post
 title: Status projektu DataBoard [vol. 3]
 author: Jacek Pospieszyński
-date: '2017-04-03'
+date: '2017-05-01'
 categories: [DSP2017, DataBoard, .NETCore]
 ---
 
