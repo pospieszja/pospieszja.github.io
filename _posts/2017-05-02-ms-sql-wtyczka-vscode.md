@@ -22,7 +22,7 @@ Rozszerzenie jest produktem Microsoftu, a jego kod dostępny na [GitHub](https:/
 * wywołanie skryptów i zwracanie wyników w postaci tabelarycznej,
 * możliwość zapisu wyniku do formatu JSON lub CSV.
 
-Instalacja rozszerzenia jest banalna, wystarczy wybrać z bocznego paska menu opcje związane z zarządzaniem rozszerzeniami, następnie wyszukać ``mssql`` i dalej po prostu zainstalować.
+Instalacja rozszerzenia jest banalna, wystarczy wybrać z bocznego paska menu opcje związane z menedżerem rozszerzeń, następnie wyszukać ``mssql`` i dalej po prostu zainstalować.
 ![install extension mssql"](/assets/2017-05-02-ms-sql-wtyczka-vscode/extension-install.png "install extension mssql")
 
 ### Konfiguracja połączenia
