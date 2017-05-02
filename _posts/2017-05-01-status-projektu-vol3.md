@@ -13,7 +13,7 @@ W końcu nastąpił większy postęp w mojej aplikacji! Bardzo się z tego ciesz
 <!--more-->
 
 ### Wzorce w praktyce
-Na wstępnie chciałbym zaznaczyć, że nie udałoby mi się tego wszystkiego zrealizować gdyby nie fantastyczny kurs Piotrka Gankiewicza](http://piotrgankiewicz.com/) - [Becoming a software developer](http://piotrgankiewicz.com/courses/becoming-a-software-developer/). Udało mi się zastosować w praktyce wzorzec [Onion Architecture](http://jeffreypalermo.com/blog/the-onion-architecture-part-1/), a przynajmniej na tyle ile go zrozumiałem. Oczywiście wszystko to małe kroki, ale są one dla mnie bardzo ważne. Opiszę wszystko na przykładzie klasy ``User``, która jest najbardziej dopracowana.
+Na wstępnie chciałbym zaznaczyć, że nie udałoby mi się tego wszystkiego zrealizować gdyby nie fantastyczny kurs [Piotrka Gankiewicza](http://piotrgankiewicz.com/) - [Becoming a software developer](http://piotrgankiewicz.com/courses/becoming-a-software-developer/). Udało mi się zastosować w praktyce wzorzec [Onion Architecture](http://jeffreypalermo.com/blog/the-onion-architecture-part-1/), a przynajmniej na tyle ile go zrozumiałem. Oczywiście wszystko to małe kroki, ale są one dla mnie bardzo ważne. Opiszę wszystko na przykładzie klasy ``User``, która jest najbardziej dopracowana.
 
 Klasa domenowa ``User`` wygląda następująco:
 
