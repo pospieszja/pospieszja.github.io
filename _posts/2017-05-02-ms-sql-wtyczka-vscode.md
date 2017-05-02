@@ -6,7 +6,7 @@ date: '2017-05-02'
 categories: [DSP2017, VSCode]
 ---
 
-Microsoft udostępnił SQL Server na Linuksa, niestety zabrakło narzędzia do jego zarządzania typu [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms), które jest dostępne na Windowsa. Istnieje CLI do zarządzania bazą danych, jednak nie jest ono najwygoniejsze. Z pomocą przychodzi [rozszerzenie do Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql), które ułatwia pracę z SQL.
+Microsoft udostępnił SQL Server na Linuksa, niestety zabrakło narzędzia do jego zarządzania typu [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms), które jest dostępne na Windowsa. Istnieje CLI do zarządzania bazą danych, jednak nie jest ono najwygodniejsze. Z pomocą przychodzi [rozszerzenie do Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql), które ułatwia pracę z SQL.
 
 ![Visual Studio Code"](/assets/2017-05-02-ms-sql-wtyczka-vscode/vscode-logo.png "Visual Studio Code")
 
@@ -15,7 +15,7 @@ Microsoft udostępnił SQL Server na Linuksa, niestety zabrakło narzędzia do j
 > Cały wpis opieram na wersji 0.3.0
 
 ### Instalacja
-Rozszerzenie jest produktem Microsoftu, a jego kod dostępny na [GitHub](https://github.com/Microsoft/vscode-mssql). Umożliwia na połączenie się z **MS SQL Server** oraz **Azure SQL**. Ponadto umożliwia:
+Rozszerzenie jest produktem Microsoftu, a jego kod dostępny na [GitHub](https://github.com/Microsoft/vscode-mssql). Pozwala na połączenie się z **MS SQL Server** oraz **Azure SQL**. Ponadto umożliwia:
 * tworzenie profili połączeń,
 * snippety i intelisense dla T-SQL,
 * kolorowanie składni,
