@@ -49,4 +49,3 @@ W celu zaprezentowania w praktyce rozszerzenia **mssql** napisałem proste polec
 ![sql result](/assets/2017-05-02-ms-sql-wtyczka-vscode/sql-result.png "sql result")
 
 Polecenie uruchamia się za pomocą skrótu **CTRL+SHIFT+E**. W wyniku otrzymałem tabelę z danymi, które jak wcześniej wspominałem można zapisać do formatu JSON lub CSV. Ponadto można zauważyć dodatkowe informacje o liczbie zwróconych krotek wraz z czasem wykonania polecenia.
-
