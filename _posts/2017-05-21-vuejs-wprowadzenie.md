@@ -71,9 +71,7 @@ Co się tutdaj dzieje. Otóż tworzę nową instancję obiektu ``Vue``, w konstr
 Teraz dokonując małej zmiany w ``index.html`` za pomocą interpolacji mogę wyświetlić zmienną ``message`` zdefiniowaną wcześniej w ``app.js`.
 
 {% highlight html %}
-<div id="app">
-    {{message}}
-</div>
+<div id="app">{{message}}</div>
 {% endhighlight %}         
 
 Powyżej pokazałem najprostsze użycie Vue.js. Jest to tylko wierzchołek podstawowych możliwości biblioteki, która pozwala m.in. na automatyczne przypisywanie modeli do danych, pętle, warunki, tworzenie szablonów itp.
