@@ -68,7 +68,7 @@ var app = new Vue({
 
 Co się tutdaj dzieje. Otóż tworzę nową instancję obiektu ``Vue``, w konstruktorze przypisuje do właściwości ``el`` selektor CSS, do którego będzie "przykotwiczona" cała aplikacja. Następnie w sekcji ``data`` definiuje zmienną ``message``.
 
-Teraz dokonując małej zmiany w ``index.html`` za pomocą interpolacji mogę wyświetlić zmienną ``message`` zdefiniowaną wcześniej w ``app.js`.
+Teraz dokonując małej zmiany w ``index.html`` za pomocą interpolacji mogę wyświetlić zmienną ``message`` zdefiniowaną wcześniej w ``app.js``.
 
 {% highlight html %}
 <div id="app">{{message}}</div>
