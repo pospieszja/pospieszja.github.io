@@ -17,7 +17,7 @@ Tak, [Vue.js](https://vuejs.org/), jest kolejną bilblioteką JavaScript, jego t
 
 ### Instalacja
 Istnieje kilka sposobów na instalację lub też użycie najnowszej wersji Vue.js w projekcie. Najprostszy z nich to dołączenie skryptu do ``<script>``:
-* pobranie skryptu w wersji [deweloperskiej](https://vuejs.org/js/vue.js) lub [produkcyjnek](https://vuejs.org/js/vue.min.js),
+* pobranie skryptu w wersji [deweloperskiej](https://vuejs.org/js/vue.js) lub [produkcyjnej](https://vuejs.org/js/vue.min.js),
 * skorzystanie z CDN [https://unpkg.com/vue](https://unpkg.com/vue).
 W obu powyższych przypadkach zmienna ``Vue`` zostanie zajerestrowana jako globalna.
 
@@ -72,7 +72,7 @@ Teraz dokonując małej zmiany w ``index.html`` za pomocą interpolacji mogę wy
 
 {% highlight html %}
 <div id="app">
-    {{ message }}
+    {{message}}
 </div>
 {% endhighlight %}         
 
