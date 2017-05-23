@@ -62,7 +62,7 @@ Aby odczytać jego wartość i przekazać ją dalej do aplikacji mogę to zrobi�
 * ``var connectionString = Configuration["ConnectionStrings:DefaultConnection"];``,
 * ``var connectionString = Configuration.GetValue<string>("ConnectionStrings:DefaultConnection");``.
 
-Powyżej przedstawiłem najprostsze rozwiązanie. Nieco bardziej skomplikowane rozwiązanie umożliwia silnego typowania, poprzez deserializację konfiguracji na obiekty klasy POCO, którą należy wcześniej utworzyć i musi ona odpowiadać strukturze pliku konfiguracyjnego.
+Powyżej przedstawiłem najprostsze rozwiązanie. Nieco bardziej skomplikowane rozwiązanie umożliwia silnego typowania, poprzez deserializację konfiguracji na obiekty klasy POCO, którą należy wcześniej utworzyć i musi ona odpowiadać strukturze pliku konfiguracyjnego. Po więcej odsyłam do [dokumentacji](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration).
 
 ### Zmienne środowiskowe
 Jak już wcześniej wspomniałem można mieć pliki konfiguracyjne odpowiednie dla środowiska, w którym została uruchomiona aplikacja. Informacje o aktualnym środowisku uruchomieniowym powinna przechowywać zmienna ``ASPNETCORE_ENVIRONMENT``, którą definiuje się różnie w zależności od systemu operacyjnego:
