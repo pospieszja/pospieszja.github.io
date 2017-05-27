@@ -16,7 +16,7 @@ Podstawowa dyrektywa, której użyłem w niejawny sposób w [poprzednim odcinku]
 
 {% highlight html %}
 <div id="app">
-  <span>{{message}}</span>
+  <span>{% raw %} {{message}} {% endraw %}</span>
   <span v-text="message"></span>
 </div>    
 {% endhighlight %} 
@@ -95,7 +95,7 @@ Pozwala na wyświetlenie tekstu zawierającego znaki ``{{`` oraz ``}}``, interpr
 
 {% highlight html %}
 <div id="app">
-  <p v-pre>{{ message will be not compilated }}</p>
+  <p v-pre>{% raw %} {{ message will be not compilated }} {% endraw %}</p>
 </div>  
 {% endhighlight %} 
 
@@ -105,7 +105,7 @@ Dyrektywa ``v-once`` powoduje, że element (oraz elementy podrzędne) zostanie p
 
 {% highlight html %}
 <div id="app">
-  <p v-once>{{ message }}</p>
+  <p v-once>{% raw %} {{message}} {% endraw %}</p>
 </div>  
 {% endhighlight %} 
 
