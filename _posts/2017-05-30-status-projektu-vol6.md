@@ -5,7 +5,7 @@ author: Jacek Pospieszyński
 date: '2017-05-27'
 categories: [DSP2017, DataBoard, Vuejs]
 ---
-Udało mi się poznać podstawy [Vue.js](https://vuejs.org), zatem nadszedł odpowiedni momemnt, żeby go połączyć z konkursową [aplikacją](https://github.com/pospieszja/DataBoard). Innymi słowy łączę ASP.NET Core z Vue.js. Czy było łatwo? Dowiecie się czytając dalej.
+Udało mi się poznać podstawy [Vue.js](https://vuejs.org), zatem nadszedł odpowiedni moment, żeby go połączyć z konkursową [aplikacją](https://github.com/pospieszja/DataBoard). Innymi słowy łączę ASP.NET Core z Vue.js. Czy było łatwo? Dowiecie się czytając dalej.
 
 <!--more-->
 ### JavaScriptServices
