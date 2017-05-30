@@ -57,7 +57,7 @@ Finalnie w widoku ``Index.cshtml`` dodałem wyświetlenie emaili wszystkich uży
 <h1>List of users</h1>
 <ul v-if="users && users.length">
     <li v-for="user in users">
-        <p>{{ user.email }}</p>
+        <p>{% raw %} {{ user.email }} {% endraw %}</p>
     </li>
 </ul>
 {% endhighlight %} 
