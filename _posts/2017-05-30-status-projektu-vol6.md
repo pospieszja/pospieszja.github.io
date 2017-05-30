@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vue.js - podstawowe dyrektywy
+title: Status projektu DataBoard [vol. 6]
 author: Jacek Pospieszyński
 date: '2017-05-27'
 categories: [DSP2017, DataBoard, Vuejs]
